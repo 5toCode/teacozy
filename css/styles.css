@@ -1,0 +1,138 @@
+html {
+    /* box-sizing: border-box; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* General Styles */
+
+body {
+    font-size: 22px;
+    font-family: Helvetica;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    align-items: center;
+    z-index: 1;
+    background-color: black;
+}
+
+header img {
+    margin-left: 10px;
+    height: 50px;
+    width: auto;
+}
+
+.nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0 10px;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.main {
+    width: 1200px;
+    padding-top: 69px;
+    margin: auto;
+}
+
+#mission {
+    margin: auto;
+    padding-top: 70px;
+    height: 700px;
+    background-image: url('../img/img-mission-background.jpg');
+}
+
+#mission .text-container {
+    margin: auto;
+    width: 100%;
+    background-color: black;
+}
+
+#featured {
+    padding-top: 70px;
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+}
+
+#featured .item {
+    padding: 5px;
+}
+
+#featured img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#featured span {
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#locations {
+    padding-top: 50px;
+    background-image: url('../img/img-locations-background.jpg');
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#locations .flex-container {
+    margin: auto;
+    width: 1100px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    margin: 5px 20px;
+    padding: 10px;
+    flex-basis: 280px;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+footer {
+    text-align: left;
+    font-size: 0.75em;
+}
